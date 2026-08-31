@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <style>
-        /* CSS Variables for a clean, white theme */
         :root {
             --bg-color: #ffffff;
             --text-color: #2d3748;
@@ -14,7 +13,6 @@
             --accent-color: #3182ce;
         }
 
-        /* Base Typography and Layout */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
@@ -24,7 +22,6 @@
             line-height: 1.6;
         }
 
-        /* Navigation Header */
         header {
             padding: 1.5rem 10%;
             background: rgba(255, 255, 255, 0.95);
@@ -57,12 +54,10 @@
             color: var(--accent-color);
         }
 
-        /* Universal Section Styling */
         section {
             padding: 5rem 10%;
         }
 
-        /* About / Summary Section */
         .about-container {
             max-width: 800px;
             margin: 0 auto;
@@ -80,7 +75,6 @@
             color: #4a5568;
         }
 
-        /* GitHub Projects Grid */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -106,6 +100,10 @@
             margin-top: 0;
             font-size: 1.25rem;
         }
+
+        .card p strong {
+            color: #4a5568;
+        }
         
         .card a {
             display: inline-block;
@@ -119,7 +117,6 @@
             text-decoration: underline;
         }
 
-        /* Publications Section */
         .publications-container {
             max-width: 800px;
             margin: 3rem auto 0;
@@ -148,7 +145,6 @@
             color: #718096;
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 3rem 10%;
@@ -166,6 +162,7 @@
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#publications">Publications</a>
+            <a href="#certificates">Certificates</a>
         </nav>
     </header>
 
@@ -179,45 +176,47 @@
     <section id="projects">
         <h2>Selected Projects</h2>
         <div class="grid">
-            
             <div class="card">
                 <h3>Project Alpha</h3>
                 <p>A high-performance data processing pipeline designed for speed and reliability. Built entirely in Rust.</p>
                 <a href="https://github.com/yourusername/project-alpha">View on GitHub &rarr;</a>
             </div>
-            
             <div class="card">
                 <h3>Project Beta</h3>
                 <p>An open-source front-end framework for rendering responsive web components effortlessly.</p>
                 <a href="https://github.com/yourusername/project-beta">View on GitHub &rarr;</a>
             </div>
-            
-            <div class="card">
-                <h3>Project Gamma</h3>
-                <p>A machine learning repository featuring pre-trained models for natural language processing tasks.</p>
-                <a href="https://github.com/yourusername/project-gamma">View on GitHub &rarr;</a>
-            </div>
-
         </div>
     </section>
 
     <section id="publications" style="background-color: var(--light-bg);">
         <h2 style="text-align: center;">Publications & Writing</h2>
         <div class="publications-container">
-            
             <div class="pub-item">
                 <h4>Advancements in Decentralized Systems</h4>
                 <p>Published in the Journal of Computer Science, 2025. Co-authored with Jane Doe.</p>
             </div>
-            
             <div class="pub-item">
                 <h4>Building Sustainable Open Source Communities</h4>
                 <p>Presented at Open Source Summit 2024. An analysis of project lifecycles and maintainer burnout.</p>
             </div>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="grid">
             
-            <div class="pub-item">
-                <h4>Optimizing Memory in Cloud Environments</h4>
-                <p>Whitepaper, 2023. Explores algorithmic approaches to reducing overhead in distributed networks.</p>
+            <div class="card">
+                <h3>Machine Learning Specialization</h3>
+                <p><strong>Coursera</strong> &bull; Issued May 2025</p>
+                <a href="YOUR_COURSERA_LINK" target="_blank">Verify Certificate &rarr;</a>
+            </div>
+            
+            <div class="card">
+                <h3>Natural Language Processing</h3>
+                <p><strong>Hugging Face</strong> &bull; Issued Aug 2026</p>
+                <a href="YOUR_HUGGINGFACE_LINK" target="_blank">Verify Certificate &rarr;</a>
             </div>
 
         </div>
