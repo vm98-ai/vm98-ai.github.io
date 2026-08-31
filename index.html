@@ -1,2 +1,231 @@
-<h1>Hello World!</h1>
-<p>My first GitHub Pages site.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* CSS Variables for a clean, white theme */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #2d3748;
+            --light-bg: #f7fafc;
+            --border-color: #e2e8f0;
+            --accent-color: #3182ce;
+        }
+
+        /* Base Typography and Layout */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Navigation Header */
+        header {
+            padding: 1.5rem 10%;
+            background: rgba(255, 255, 255, 0.95);
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(5px);
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        nav a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Universal Section Styling */
+        section {
+            padding: 5rem 10%;
+        }
+
+        /* About / Summary Section */
+        .about-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .about-container h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+        }
+        
+        .about-container p {
+            font-size: 1.25rem;
+            color: #4a5568;
+        }
+
+        /* GitHub Projects Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .card {
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            border-color: #cbd5e0;
+        }
+        
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.25rem;
+        }
+        
+        .card a {
+            display: inline-block;
+            margin-top: 1.5rem;
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Publications Section */
+        .publications-container {
+            max-width: 800px;
+            margin: 3rem auto 0;
+        }
+        
+        .pub-item {
+            border-left: 4px solid var(--border-color);
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+            transition: border-color 0.2s;
+        }
+
+        .pub-item:hover {
+            border-left-color: var(--accent-color);
+        }
+        
+        .pub-item h4 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.2rem;
+            color: var(--text-color);
+        }
+        
+        .pub-item p {
+            margin: 0;
+            font-size: 1rem;
+            color: #718096;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 10%;
+            border-top: 1px solid var(--border-color);
+            color: #a0aec0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>[Your Name]</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#publications">Publications</a>
+        </nav>
+    </header>
+
+    <section id="about" style="background-color: var(--light-bg);">
+        <div class="about-container">
+            <h2>Hello, I'm [Your Name].</h2>
+            <p>I am a software engineer and researcher. I specialize in building elegant, open-source tools and writing about the intersections of computer science and modern technology. Welcome to my portfolio.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Selected Projects</h2>
+        <div class="grid">
+            
+            <div class="card">
+                <h3>Project Alpha</h3>
+                <p>A high-performance data processing pipeline designed for speed and reliability. Built entirely in Rust.</p>
+                <a href="https://github.com/yourusername/project-alpha">View on GitHub &rarr;</a>
+            </div>
+            
+            <div class="card">
+                <h3>Project Beta</h3>
+                <p>An open-source front-end framework for rendering responsive web components effortlessly.</p>
+                <a href="https://github.com/yourusername/project-beta">View on GitHub &rarr;</a>
+            </div>
+            
+            <div class="card">
+                <h3>Project Gamma</h3>
+                <p>A machine learning repository featuring pre-trained models for natural language processing tasks.</p>
+                <a href="https://github.com/yourusername/project-gamma">View on GitHub &rarr;</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="publications" style="background-color: var(--light-bg);">
+        <h2 style="text-align: center;">Publications & Writing</h2>
+        <div class="publications-container">
+            
+            <div class="pub-item">
+                <h4>Advancements in Decentralized Systems</h4>
+                <p>Published in the Journal of Computer Science, 2025. Co-authored with Jane Doe.</p>
+            </div>
+            
+            <div class="pub-item">
+                <h4>Building Sustainable Open Source Communities</h4>
+                <p>Presented at Open Source Summit 2024. An analysis of project lifecycles and maintainer burnout.</p>
+            </div>
+            
+            <div class="pub-item">
+                <h4>Optimizing Memory in Cloud Environments</h4>
+                <p>Whitepaper, 2023. Explores algorithmic approaches to reducing overhead in distributed networks.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 [Your Name]. Hosted on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
